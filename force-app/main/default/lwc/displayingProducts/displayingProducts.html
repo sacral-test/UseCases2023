@@ -1,0 +1,28 @@
+<!--Description:Provide a LWC page to show the product name with their prices. 
+    The price should be edited by the admin user only, and it should not be more than 1000.
+    Author Name: Nagarjuna Sadhu
+    Created Date : 07/11/2023
+    modifcation data: 06/12/2023
+-->
+
+<template>
+    <lightning-card title="Products & Sales Prices" icon-name="standard:product">
+        <template if:true={OpportunityLineItem}>
+            
+            <lightning-datatable 
+                key-field="Id"
+                columns={columns}
+                data={OpportunityLineItem}
+                hide-checkbox-column="false"
+                show-row-number-column="true"
+                draft-values={savedraftvalues}
+                onsave={handleSave}>
+            </lightning-datatable>
+        </template>
+
+        <template if:true={error}>
+            {error}
+        </template>
+
+    </lightning-card>
+</template>

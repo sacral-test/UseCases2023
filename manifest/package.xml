@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>PostalCodeAPIController</members>
+        <members>PostalCodeAPIControllerTest</members>
+        <members>HttpUtility</members>
+        <members>HttpConstants</members>
+        <members>ProductController</members>
+        <members>ProductControllerTest</members>
+        <members>ProductSelector</members>
+        <members>ProductConstants</members>
+        <name>ApexClass</name>
+    </types>
+
+    <types>
+        <members>addressLookup</members>
+        <members>displayingProducts</members>
+        <name>LightningComponentBundle</name>
+    </types>
+
+    <types>
+		<members>Postal_Api_Key</members>
+        <members>Edit_Admin_Access</members>
+        <members>Edit_Error_Message</members>
+        <members>Error</members>
+        <members>Error_Message</members>
+        <members>Price_Error_Message</members>
+        <members>Success</members>
+        <members>Success_Message</members>
+        <members>limits_Custom_Labels</members>
+		<name>CustomLabel</name>
+	</types>
+
+    <version>59.0</version>
+</Package>
